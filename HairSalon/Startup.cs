@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore; // to use UseMySql
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TheBest.Models;
+using HairSalon.Models;
 
-namespace TheBest
+namespace HairSalon
 {
   public class Startup
   {
@@ -25,7 +25,7 @@ namespace TheBest
       services.AddMvc();
 
       services.AddEntityFrameworkMySql()
-        .AddDbContext<TheBestContext>(options => options
+        .AddDbContext<HairSalonContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
     }
 
@@ -44,7 +44,7 @@ namespace TheBest
 
       app.Run(async (context) =>
       {
-        await context.Response.WriteAsync("Poop!");
+        await context.Response.WriteAsync("Pardon! Looks like we've made an error.");
       });
     }
   }
