@@ -41,13 +41,34 @@ To use this application, follow the following instructions.
 
 #### Application Setup:
 _Clone this repository via Terminal using the following commands:_
-* ``$ cd desktop``
-* ``$ git clone "https://github.com/spodolak/HairSalon.Solution.git" ``
-* ``$ cd HairSalon.Solution``
+* > ``$ cd desktop``
+* >``$ git clone "https://github.com/spodolak/HairSalon.Solution.git" ``
+* >``$ cd HairSalon.Solution``
 
-_To Run this Console Application, enter the following command in the Terminal:_
+_Set up a local project database to edit and view in MySQL Workbench use the following SQLcommands:_
+* > CREATE DATABASE ` stephanie_podolak`
+* > CREATE TABLE `clients` (
+  `ClientId` int NOT NULL AUTO_INCREMENT,
+  `Name` varchar(255) DEFAULT NULL,
+  `Number` int NOT NULL DEFAULT '0',
+  `StylistId` int NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ClientId`)
+) 
+* > CREATE TABLE `stylists` (
+  `StylistId` int NOT NULL AUTO_INCREMENT,
+  `Name` varchar(255) DEFAULT NULL,
+  `Specialty` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`StylistId`)
+) 
 
-* ``$ dotnet run``
+ 
+
+
+_To Run this Console Application, enter the following commands in the Terminal:_
+
+* >``$ dotnet restore``
+* >``$ dotnet build``
+* >``$ dotnet run``
 
 _To view the source code of this application, open the folder in the Text Editor of your choice. (Example: to open via Visual Code enter the command ``code . `` in Terminal.)_
 
@@ -55,6 +76,7 @@ _To view the source code of this application, open the folder in the Text Editor
 * _Git_
 * _C#_
 * _.NET Core 2.2_
+* _MySQL Workbench 8.0_
 * _dotnet script_
 * _VS Code_
 
