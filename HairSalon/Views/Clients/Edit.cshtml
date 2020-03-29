@@ -15,8 +15,8 @@
     @Html.EditorFor(model => model.Name)
     @Html.LabelFor(model => model.Number)
     @Html.EditorFor(model => model.Number)
-    @Html.Label("Stylist Name")
-    @Html.EditorFor(model => model.Stylist.Name)
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId")
 
     <input type="submit" value="Save" />
 }
