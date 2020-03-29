@@ -46,20 +46,21 @@ _Clone this repository via Terminal using the following commands:_
 * >``$ cd HairSalon.Solution``
 
 _Set up a local project database to edit and view in MySQL Workbench use the following SQLcommands:_
-* > CREATE DATABASE ` stephanie_podolak`
+* > CREATE DATABASE ` stephanie_podolak`;
+* > USE DATABASE `stephanie_pdolak`;
 * > CREATE TABLE `clients` (
   `ClientId` int NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
   `Number` int NOT NULL DEFAULT '0',
   `StylistId` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`ClientId`)
-) 
+) ;
 * > CREATE TABLE `stylists` (
   `StylistId` int NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
   `Specialty` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`StylistId`)
-) 
+) ;
 
  
 
