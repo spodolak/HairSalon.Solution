@@ -20,8 +20,11 @@
   <h3>Client: @Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId }) </h3>
 }
 
-<p>@Html.ActionLink("Back To Stylists", "Index")</p>
+<p>@Html.ActionLink("Add New Client", "Create", "Clients")</p>
+
 <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
 <br>
+
+<p>@Html.ActionLink("Back To Stylists", "Index")</p>
 <p>@Html.ActionLink("Home", "Index", "Home")</p>
