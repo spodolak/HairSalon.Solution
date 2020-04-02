@@ -47,7 +47,7 @@ _Clone this repository via Terminal using the following commands:_
 
 _Set up a local project database to edit and view in MySQL Workbench use the following SQLcommands:_
 * > CREATE DATABASE ` stephanie_podolak`;
-* > USE DATABASE `stephanie_pdolak`;
+* > USE `stephanie_podolak`;
 * > CREATE TABLE `clients` (
   `ClientId` int NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
