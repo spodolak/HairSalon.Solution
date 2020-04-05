@@ -1,7 +1,7 @@
 # _Hair Salon_
 
 #### _Epicodus C# Database Practice_, _Mar. 18, 2020_
-#### A web application for a hair salon (an exersize utilizing one to many object relationships)
+#### A web application for a hair salon (an exercize utilizing one to many object relationships)
 
 #### By _**Stephanie Podolak**_
 
@@ -73,6 +73,10 @@ _To Run this Console Application, enter the following commands in the Terminal:_
 
 _To view the source code of this application, open the folder in the Text Editor of your choice. (Example: to open via Visual Code enter the command ``code . `` in Terminal.)_
 
+## Contact Info
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/spodolak/HairSalon.Solution/issues) here on GitHub._
+
+
 ## Technologies Used
 * _Git_
 * _C#_
@@ -83,6 +87,6 @@ _To view the source code of this application, open the folder in the Text Editor
 
 ### License
 
-*This application is licensed under the MIT license.*
+[MIT](https://choosealicense.com/licenses/mit/)
 
 Copyright (c) 2020 **_Stephanie Podolak_**
